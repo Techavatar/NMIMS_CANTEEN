@@ -269,6 +269,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadFoodItems() {
+        // First, check if we need to initialize the database with our food items
+        dataInitializer.checkAndInitializeIfNeeded();
+
+        // Then load food items from Firestore
         firestoreService.getAllFoodItems(new FirestoreService.DatabaseCallback<List<FoodItem>>() {
             @Override
             public void onSuccess(List<FoodItem> result) {
