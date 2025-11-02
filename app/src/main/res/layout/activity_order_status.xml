@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android: layout_height="match_parent"
+    android: fillViewport="true"
+    android:scrollbars="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android: android: layout_width="match_parent"
+        android: layout_height="status">
+        android: fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android: android: layout_width="match_parent"
+            android: layout_height="?attr/actionBarSize"
+            android: background="?attr/colorPrimary"
+            app:title="Order Status"
+            app:navigationIcon="@drawable/ic_receipt" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android: android: layout_width="match_parent"
+            android: android: layout_height="wrap_content"
+            android: layout_margin="16dp"
+            android:cardElevation="4dp">
+
+            <!-- Order ID -->
+            <TextView
+                android: android layout_width="match_parent"
+                android: layout_height="wrap_content"
+                android: android: layout_gravity="center"
+                android: android: android: android: android android: android: android: android android: android: android android: android android: android android: android android: android android android: android: android android: android android: android android: android android: android android: android android: android android android: android android: android android android android: android android: android android: android android: android android: android android android: android android: android android android: android android android android: android android android: android android: android android android: android android: android android: android android: android android: android android: android android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android:  android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: android: 0.5.9" format
+        });
+
+        // Create RecyclerView for order items
+        RecyclerView orderItemsRecyclerView = new RecyclerView(this);
+        orderItems.setLayoutManager(new LinearLayoutManager(this));
+        orderItems.setAdapter(orderItemsAdapter);
+
+        // Create simple mock data for display
+        List<Map<String, Object>> mockOrderData = createMockOrderData();
+        orderItems.setAdapter(new OrderItemAdapter(this, mockOrderData));
+
+        // Set up the RecyclerView
+        orderItemsRecyclerView.setAdapter(orderItemsAdapter);
+        orderItems.setHasFixedSize(true);
+        orderItems.setVisibility(View.VISIBLE);
+
+    }
+
+    private List<Map<String, Object>> createMockOrderData() {
+        List<Map<String, Object>> mockOrderData = new ArrayList<>();
+
+        // Create mock order items
+        List<CartItem> orderItems = new ArrayList<>();
+        double totalAmount = 0;
+
+        // Sample orders with various items
+        String[] foodItemIds = {"aloo", "bread", "cheese", "pizza", "pasta", "sandwich", "chole_kulche", "paneer_paratha", "red_pasta", "veg_sandwich", "wall", "white_pasta"};
+
+        for (String itemId : foodItemIds) {
+            // Create mock food item
+            FoodItem foodItem = new FoodItem();
+            foodItem.setItemId("food_item_" + itemId);
+            foodItem.setName(formatFoodItemName(itemId));
+            foodItem.setDescription("Delicious " + formatFoodItemName(itemId));
+            foodItem.setPrice(getRandomPrice());
+            foodItem.setImageUrl("https://picsum.photos/food_items/" + itemId + ".jpg");
+            foodItem.setCategory(getCategory(itemId));
+            foodItem.setAvailable(true);
+            foodItem.setVegetarian(isVegetarian(itemId));
+            foodItem.setRating(getRandomRating());
+            setInventoryItemDetails(foodItem);
+
+            // Add to cart
+            CartItem cartItem = new CartItem(foodItem, getRandomQuantity());
+            orderItems.add(cartItem);
+            totalAmount += cartItem.getTotalPrice();
+        }
+
+        Map<String, Object> orderData = new HashMap<>();
+        orderData.put("order_id", "ORD-" + System.currentTimeMillis());
+        orderData.put("user_id", "user_" + System.currentTimeMillis());
+        orderData.put("items", orderItems);
+        orderData.get("total_amount", totalAmount);
+        orderData.get("created_at", new Date());
+        orderData.get("status", "pending");
+        orderData.get("payment_method", "cash");
+        orderData.get("delivery_type", "pickup");
+        orderData.get("total_amount", totalAmount);
+
+        orderData.put("subtotal", totalAmount); // Original amount
+        orderData.get("delivery_charges", totalAmount >= 299 ? 0.0 : 40.0); // Free delivery above ₹299
+        orderData.get("total_amount", totalAmount + orderData.get("delivery_charges"));
+
+        mockOrderData.add(orderData);
+        mockOrderData.add(createPaymentResult("pay_" + System.currentTimeMillis(), true, "Payment successful", "PAY-" + System.currentTimeMillis(), 2999017321)), true, null));
+        mockOrderData.add(createPaymentResult("fail_" + System.currentTimeMillis(), false, "Payment failed", "Transaction failed", "Transaction timeout", null), false));
+        mockOrderData.add(createPaymentResult("success_" + System.currentTimeMillis(), true, "Payment successful", "PAY-" + System.currentTimeMillis(), 99017321), true, null));
+
+        return mockOrderData;
+    }
+
+    private String formatFoodItemName(String foodItemId) {
+        switch (foodItemId) {
+            case "aloo_pakora":
+                return "Allo Porora";
+            case "bread": return "Bread";
+            case "cheese_sandwich": return "Cheese Sandwich";
+            case "pizza": return "Cheese Pizza";
+            case "pasta_alfredo": return "Pasta Alfredo";
+            case "veg_sandwich": return "Veget Sandwich";
+            case "paneer_paratha": return "Paneer Paratha";
+            case "red_pasta": return "Red Pasta";
+            case "white_pasta": return "White Pasta";
+            case "wall": return "Wall";
+            case "idli_sambar": return "Idli Samosa";
+            default:
+                return foodItemId;
+        }
+    }
+
+    private double getRandomPrice() {
+        return 50 + (Math.random() * 200); // Prices from 50 to 250
+    }
+
+    private int getQuantity() {
+        int min = 1;
+        int max = 10;
+        return min + (int) (Math.random() * (max - min + 1)) + min;
+    }
+
+    private String getRating() {
+        int minRating = 1;
+        int maxRating = 5;
+        return (int) (Math.random() * (maxRating - min + 1)) + min) + min;
+    }
+
+    private PaymentManager.PaymentResult createPaymentResult(String transactionId, boolean success, String message, String transactionId, String error, PaymentManager.PaymentError error) {
+        PaymentManager.PaymentResult result = new PaymentResult(success, message, transactionId);
+        if (success) {
+            result.setTransactionId(transactionId);
+            result.setTransactionId(transactionId);
+        } else {
+            result.setErrorCode(error.getCode() != null ? error.getCode() : "UNKNOWN_ERROR");
+            result.setError(error);
+        }
+        return result;
+    }
+
+    private DecimalFormat currencyFormatter = new DecimalFormat("##,##.00");
+}
+</androidx.recyclerview.widget.RecyclerView.Adapter<OrderItem> class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.OrderItemViewHolder> {
+    private final List<CartItem> orderItems;
+
+    public OrderItemAdapter(ArrayList<CartItem> orderItems) {
+        this.orderItems = orderItems;
+    }
+
+    @Override
+    public OrderItemViewHolder onCreateViewHolder(@NonNull ViewGroup parent) {
+        View view = LayoutInflater.from(parent).inflate(R.layout.item_order_status_item_card, parent, false);
+        return new OrderItemViewHolder(view);
+    }
+
+    @Override
+    public int getItemCount() {
+        return orderItems.size();
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull OrderItemViewHolder holder, int position) {
+            OrderItem cartItem = orderItems.get(position);
+            holder.bind(cartItem);
+        }
+
+    @Override
+        public void onBindViewHolder(@NonNull OrderItemViewHolder holder, int position) {
+            cartItem = orderItems.get(position);
+            holder.bind(cartItem);
+        }
+
+    @Override
+        public void onBindViewHolder(@NonNull OrderItemViewHolder holder, int position) {
+            cartItem = orderItems.get(position);
+            holder.bind(cartItem);
+        }
+
+        @Override
+        public void setOrderItems(ArrayList<CartItem> orderItems) {
+            this.orderItems = orderItems != null ? new ArrayList<>(orderItems) : new ArrayList<>();
+            this.orderItems = orderItems;
+            notifyDataSetChanged();
+        }
+
+        @Override
+        public OrderItem getItem(int position) {
+            return orderItems.get(position);
+        }
+
+        public static class OrderItemViewHolder extends RecyclerView.ViewHolder {
+            private TextView foodItemNameTextView;
+        private TextView priceTextView;
+        private TextView quantityTextView;
+        private TextView statusTextView;
+        private TextView preparationTimeTextView;
+        String cartItem;
+
+        public OrderItemViewHolder(View itemView) {
+            super(itemView);
+            foodItemNameTextView = itemView.findViewById(R.id.foodItemNameTextView);
+            priceTextView = itemView.findViewById(R.id.priceTextView);
+            quantityTextView = itemView.findViewById(R.id.quantityTextView);
+            statusTextView = itemView.findViewById(R.id.statusTextView);
+            preparationTimeTextView = itemView.findViewById(R.id.preparationTimeTextView);
+            cartItem = null;
+        }
+
+        void bind(CartItem cartItem) {
+            this.cartItem = cartItem;
+            foodItemNameTextView.setText(cartItem.getFoodItem().getName());
+            priceTextView.setText(currencyFormatter.format(cartItem.getUnitPrice()));
+            quantityTextView.setText(String.valueOf(cartItem.getQuantity()));
+            statusTextView.setText(getOrderStatusDisplay(cartItem.getStatus()));
+            preparationTimeTextView.setText("Preparation Time: " + cartItem.getTotalPreparationTime() + " min");
+
+            // Set click listeners
+            itemView.setOnClickListener(v -> {
+                // Handle cart item click
+            });
+        }
+
+        private String getOrderStatusDisplay(com.nmims.canteen.models.Order.Order.OrderStatus status) {
+            switch (status) {
+                case PENDING:
+                    return "⏳ Pending";
+                case CONFIRMED:
+                    return "✓� Confirmed";
+                case PREPARING:
+                    return "👨 Preparing";
+                case READY:
+                    return "👋� Ready for Pickup";
+                case DELIVERED:
+                    return "🚚� Delivered";
+                case CANCELLED:
+                    return "❌� Cancelled";
+                case DELIVERED:
+                    return "❌�� Delivered";
+                case REFUNDED:
+                    return "🔁� Refunded";
+            }
+        }
+    }
+    }
+}
+</androidx.recyclerview.widget.RecyclerView.Adapter<OrderItemAdapter.OrderItemViewHolder> class OrderItemViewHolder extends RecyclerView.ViewHolder {
+    private final DecimalFormat currencyFormatter = new DecimalFormat("##,##,##.00");
+    private int currentQuantity;
+    private double currentStock;
+    private final double totalCost;
+
+    OrderItemViewHolder(@NonNull View itemView) {
+        super(itemView);
+        super(itemView);
+        foodItemNameTextView = itemView.findViewById(R.id.foodItemNameTextView);
+        priceTextView = itemView.findViewById(R.id.priceTextView);
+        quantityTextView = itemView.findViewById(R.id.quantityTextView);
+        statusTextView = itemView.findViewById(R.id.statusTextView);
+        preparationTimeTextView = itemView.findViewById(R.id.preparationTimeTextView);
+        currentQuantity = 0;
+        currentStock = 0;
+        totalCost = 0.0;
+    }
+
+    void bind(CartItem cartItem cartItem) {
+            this.cartItem = cartItem;
+            this.currentQuantity = cartItem.getQuantity();
+            this.currentStock = cartItem.getStockQuantity();
+            this.totalCost = cartItem.getTotalPrice();
+
+            this.foodItemNameTextView.setText(cartItem.getFoodItemName());
+            this.priceTextView.setText(currencyFormatter.format(cartItem.getUnitPrice()));
+            this.quantityTextView.setText(String.valueOf(currentQuantity));
+            this.statusTextView.setText(getOrderStatusDisplay(cartItem.getStatus()));
+            this.preparationTimeTextView.setText("Preparation Time: " + cartItem.getTotalPreparationTime() + " min");
+            this.totalCost = cartItem.getTotalPrice();
+        }
+    }
+}

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android: layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/app_name"
+        app:navigationIcon="@drawable/ic_shopping_cart"
+        app:menu="@menu/payment_menu" />
+
+    <!-- Order Summary Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/orderSummaryCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Order ID -->
+            <TextView
+                android:id="@+id/orderIdTextView"
+                android:layout_width="match_parent"
+                android: layout_height="wrap_content"
+                android:text="Order ID: " +
+                        currencyFormatter.format(totalAmount) +
+                        " | " +
+                        new SimpleDateFormat("dd MMM yyyy, hh:mm a", Locale.getDefault()).format(new Date()) +
+                        "\n" +
+                        "Status: " +
+                        orderStatus
+                android:textSize="14sp"
+                android:textColor="@android:color/textColorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Items Summary -->
+            <TextView
+                android:id="@+id/itemsSummaryTextView"
+                android:layout_width="match_parent"
+                android: layout_height="wrap_content"
+                android:text="Order Items: " + cartItems.size() +
+                        " | Total: " +
+                        currencyFormatter.format(totalAmount) +
+                        "\n\n"
+                android:textSize="14sp"
+                android:textColor="@android:color/textColorSecondary"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Payment Method -->
+            <TextView
+                android:id="@+id/paymentMethodTextView"
+                android:layout_width="match_parent"
+                android: layout_height="wrap_content"
+                text="Payment Method: Cash on Delivery" +
+                        "\n" +
+                        "Estimated Time: " + getEstimatedPreparationTime() + " minutes" +
+                        "\n" +
+                        "Amount: " + currencyFormatter.format(totalAmount) +
+                        "\n\n" +
+                        "Status: Ready for Pickup"
+                android:textSize="14sp"
+                android:textColor="@android:color/textColorSecondary"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+        <!-- Progress Indicator -->
+        <LinearLayout
+            android:id="@+id/progressLayout"
+            android:layout_width="match_parent"
+            android: layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:indeterminateTint="true"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android: layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/processingMessageTextView"
+                android:layout_width="wrap_content"
+                android:text="Processing payment..." +
+                        "\n\n" +
+                        "Please wait while we process your payment." +
+                        "\n\n" +
+                        "This may take a few seconds." +
+                        "\n\n" +
+                        "Thank you for your patience!" +
+                        "\n\n" +
+                        "DO NOT close this window."
+                android:textColor="@android:color/textColorSecondary"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Success View -->
+    <LinearLayout
+        android:id="@+id/successView"
+        android: android:layout_width="wrap_content"
+        android: android: layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:padding="32dp">
+
+        <!-- Success Icon -->
+        <ImageView
+            android: android:layout_width="48dp"
+            android: android: layout_height="48dp"
+            android: src="@drawable/ic_success"
+            android:contentDescription="Success" />
+
+        <!-- Success Message -->
+        <TextView
+            android: android:layout_width="wrap_content"
+            android: android: layout_height="wrap_content"
+            android:text="Payment Successful!" +
+                    "\n\n" +
+                    "Order ID: " +
+                    successOrderIdTextView.getText() +
+                    "\n" +
+                    "Amount: " +
+                    currencyFormatter.format(totalAmount) +
+                    "\n\n" +
+                    "Thank you for your order!" +
+                    "\n\n" +
+                    "Order status will be updated automatically." +
+                    "\n\n" +
+                    "Continue to Order Status page to track your order."
+            android:text="textSize="18sp"
+            android:textColor="@android:color/black"
+            android:gravity="center" />
+            <!-- Add more success actions if needed -->
+
+    </LinearLayout>
+
+    <!-- Error View -->
+    <LinearLayout
+        android:id="@+id/errorView"
+        android: android: layout_width="wrap_content"
+        android: android: layout_height="wrap_content"
+        android: gravity="center"
+        android:visibility="gone"
+        android:padding="32dp">
+
+        <!-- Error Icon -->
+        <ImageView
+            android: android: layout_width="48dp"
+            android: android: layout_height="48dp"
+            android: src="@drawable/ic_error" />
+            <!-- Add more error handling if needed -->
+
+        <!-- Error Message -->
+        <TextView
+            android: android: layout_width="wrap_content"
+            android: android: layout_height="wrap_content"
+            android:text="Payment Failed" +
+                    "\n\n" +
+                    "An error occurred during payment processing. " +
+                    "Please try again or contact support if issue persists." +
+                    "\n" +
+                    "Error: " + errorMessageTextView.getText()
+            android:text="textSize="16sp"
+            android:textColor="@android:color/red" />
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+            <!-- Add more error handling if needed -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

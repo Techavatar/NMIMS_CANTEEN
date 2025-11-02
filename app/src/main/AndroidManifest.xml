@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Network permissions for Firebase -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Storage permissions for image handling -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Notification permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Location permissions for delivery -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".CanteenApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NMIMSCanteen"
+        android:usesCleartextTraffic="false"
+        tools:targetApi="31">
+
+        <!-- Firebase configuration -->
+        <service
+            android:name=".services.CanteenFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Login Activity - Launcher -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Signup Activity -->
+        <activity
+            android:name=".activities.SignupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Main Activity - Food Menu -->
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Cart Activity -->
+        <activity
+            android:name=".activities.CartActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Payment Activity -->
+        <activity
+            android:name=".activities.PaymentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Review Activity -->
+        <activity
+            android:name=".activities.ReviewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Order History Activity -->
+        <activity
+            android:name=".activities.OrderHistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- Profile Activity -->
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- Admin Dashboard Activity -->
+        <activity
+            android:name=".activities.AdminActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- Sales Analytics Activity -->
+        <activity
+            android:name=".activities.SalesAnalyticsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- Inventory Management Activity -->
+        <activity
+            android:name=".activities.InventoryManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- Order Management Activity -->
+        <activity
+            android:name=".activities.OrderManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- Food Item Management Activity -->
+        <activity
+            android:name=".activities.FoodItemManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- User Management Activity -->
+        <activity
+            android:name=".activities.UserManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- Review Management Activity -->
+        <activity
+            android:name=".activities.ReviewManagementActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- Settings Activity -->
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.NoActionBar"
+            android:screenOrientation="portrait" />
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="false"
+            android:theme="@style/Theme.NMIMSCanteen.Splash"
+            android:screenOrientation="portrait" />
+
+        <!-- File provider for image sharing -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Firebase App Indexing -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+    </application>
+
+</manifest>
