@@ -18,6 +18,7 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 import com.nmims.canteen.models.User;
+import com.nmims.canteen.utils.FirebaseUtils;
 
 import java.util.HashMap;
 import java.util.Map;
