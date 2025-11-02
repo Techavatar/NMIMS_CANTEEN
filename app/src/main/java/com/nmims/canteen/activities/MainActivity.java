@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         authService = FirebaseAuthService.getInstance();
         firestoreService = FirestoreService.getInstance();
         cartManager = CartManager.getInstance(this);
+        dataInitializer = new FirebaseDataInitializer(this);
         foodItems = new ArrayList<>();
     }
 
