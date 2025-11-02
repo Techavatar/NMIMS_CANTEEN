@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">NMIMS Canteen</string>
+
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="logout">Logout</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Sign Up</string>
+
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="orders">Orders</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="admin">Admin</string>
+    <string name="reviews">Reviews</string>
+
+    <!-- Menu Actions -->
+    <string name="action_search">Search</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_cart">Cart</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_share">Share</string>
+
+    <!-- Food Items -->
+    <string name="food_menu">Food Menu</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="in_stock">In Stock</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="preparation_time">Preparation Time</string>
+    <string name="rating">Rating</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+
+    <!-- Cart -->
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="cart_empty">Your cart is empty</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="tax">Tax</string>
+    <string name="proceed_to_checkout">Proceed to Checkout</string>
+    <string name="remove_item">Remove Item</string>
+    <string name="quantity">Quantity</string>
+    <string name="item_added_to_cart">Item added to cart</string>
+    <string name="item_removed_from_cart">Item removed from cart</string>
+
+    <!-- Payment -->
+    <string name="payment">Payment</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="upi_payment">UPI Payment</string>
+    <string name="card_payment">Card Payment</string>
+    <string name="complete_payment">Complete Payment</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="payment_failed">Payment Failed</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="order_failed">Order Failed</string>
+
+    <!-- Order Status -->
+    <string name="order_status">Order Status</string>
+    <string name="pending">Pending</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="preparing">Preparing</string>
+    <string name="ready">Ready</string>
+    <string name="delivered">Delivered</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="order_id">Order ID</string>
+    <string name="estimated_delivery_time">Estimated Delivery Time</string>
+    <string name="track_order">Track Order</string>
+
+    <!-- Reviews -->
+    <string name="write_review">Write Review</string>
+    <string name="your_review">Your Review</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="rate_this_item">Rate this item</string>
+    <string name="helpful">Helpful</string>
+    <string name="not_helpful">Not Helpful</string>
+    <string name="no_reviews_yet">No reviews yet</string>
+    <string name="review_submitted">Review submitted successfully</string>
+
+    <!-- Admin Dashboard -->
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="today_orders">Today\'s Orders</string>
+    <string name="today_revenue">Today\'s Revenue</string>
+    <string name="active_users">Active Users</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="view_analytics">View Analytics</string>
+    <string name="manage_inventory">Manage Inventory</string>
+    <string name="recent_orders">Recent Orders</string>
+    <string name="low_stock_alert">Low Stock Alert</string>
+    <string name="restock_items">Restock Items</string>
+    <string name="add_food_item">Add Food Item</string>
+    <string name="generate_report">Generate Report</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="quick_actions">Quick Actions</string>
+
+    <!-- Analytics -->
+    <string name="sales_analytics">Sales Analytics</string>
+    <string name="revenue_overview">Revenue Overview</string>
+    <string name="total_revenue">Total Revenue</string>
+    <string name="average_order_value">Average Order Value</string>
+    <string name="order_statistics">Order Statistics</string>
+    <string name="total_orders">Total Orders</string>
+    <string name="completed_orders">Completed</string>
+    <string name="cancelled_orders">Cancelled</string>
+    <string name="top_selling_items">Top Selling Items</string>
+    <string name="export_analytics">Export Analytics</string>
+    <string name="export_as_csv">Export as CSV</string>
+    <string name="export_as_json">Export as JSON</string>
+    <string name="date_range">Date Range</string>
+    <string name="change">Change</string>
+    <string name="today">Today</string>
+    <string name="this_week">This Week</string>
+    <string name="this_month">This Month</string>
+    <string name="custom">Custom</string>
+
+    <!-- Profile -->
+    <string name="user_profile">User Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="addresses">Addresses</string>
+    <string name="add_address">Add Address</string>
+    <string name="preferences">Preferences</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Language</string>
+
+    <!-- Settings -->
+    <string name="app_settings">App Settings</string>
+    <string name="notifications_settings">Notifications Settings</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="email_notifications">Email Notifications</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    <string name="contact_support">Contact Support</string>
+
+    <!-- Common Actions -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="done">Done</string>
+    <string name="retry">Retry</string>
+    <string name="refresh">Refresh</string>
+    <string name="close">Close</string>
+    <string name="continue">Continue</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+
+    <!-- Error Messages -->
+    <string name="error_general">Something went wrong. Please try again.</string>
+    <string name="error_network">No internet connection. Please check your network settings.</string>
+    <string name="error_auth">Authentication failed. Please try again.</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_invalid_password">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_loading_data">Failed to load data. Please try again.</string>
+    <string name="error_no_data">No data available</string>
+    <string name="error_server">Server error. Please try again later.</string>
+
+    <!-- Success Messages -->
+    <string name="success_saved">Changes saved successfully</string>
+    <string name="success_updated">Updated successfully</string>
+    <string name="success_deleted">Deleted successfully</string>
+    <string name="success_added">Added successfully</string>
+
+    <!-- Loading -->
+    <string name="loading">Loading...</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="fetching_data">Fetching data...</string>
+
+    <!-- Empty States -->
+    <string name="empty_cart">Your cart is empty</string>
+    <string name="empty_orders">No orders yet</string>
+    <string name="empty_reviews">No reviews yet</string>
+    <string name="empty_notifications">No notifications</string>
+    <string name="no_results_found">No results found</string>
+
+    <!-- Time Formats -->
+    <string name="minutes_abbrev">min</string>
+    <string name="hours_abbrev">hr</string>
+    <string name="currency_symbol">₹</string>
+
+    <!-- Content Descriptions -->
+    <string name="cd_menu">Menu</string>
+    <string name="cd_cart">Shopping Cart</string>
+    <string name="cd_favorite">Add to Favorites</string>
+    <string name="cd_search">Search</string>
+    <string name="cd_filter">Filter</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_close">Close</string>
+    <string name="cd_increase_quantity">Increase Quantity</string>
+    <string name="cd_decrease_quantity">Decrease Quantity</string>
+    <string name="cd_remove_item">Remove Item</string>
+    <string name="cd_food_image">Food Item Image</string>
+    <string name="cd_rating">Rating</string>
+    <string name="cd_vegetarian">Vegetarian</string>
+
+    <!-- Food Categories -->
+    <string name="category_indian_breakfast">Indian Breakfast</string>
+    <string name="category_snacks">Snacks</string>
+    <string name="category_north_indian">North Indian</string>
+    <string name="category_south_indian">South Indian</string>
+    <string name="category_gujarati">Gujarati</string>
+    <string name="category_maharashtrian">Maharashtrian</string>
+    <string name="category_italian">Italian</string>
+    <string name="category_fast_food">Fast Food</string>
+    <string name="category_all">All</string>
+
+    <!-- Delivery Types -->
+    <string name="delivery_type_pickup">Pickup</string>
+    <string name="delivery_type_delivery">Delivery</string>
+
+    <!-- Address Form -->
+    <string name="street_address">Street Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="pincode">Pincode</string>
+    <string name="landmark">Landmark (Optional)</string>
+    <string name="address_type">Address Type</string>
+    <string name="home">Home</string>
+    <string name="work">Work</string>
+    <string name="other">Other</string>
+    <string name="set_as_default">Set as Default</string>
+</resources>
