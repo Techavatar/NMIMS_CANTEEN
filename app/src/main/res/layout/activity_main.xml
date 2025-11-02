@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindowsInsets="true">
+
+        <androidx.coordinatorlayout.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.NMIMSCanteen.AppBarOverlay">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindowsInsets="true">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:title="NMIMS Canteen"
+                    app:subtitle="@string/app_name"
+                    app:menu="@menu/menu/main_menu" />
+
+                <!-- Cart Badge -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_cart"
+                        android:contentDescription="Shopping Cart"
+                        android:backgroundTint="@color/colorAccent" />
+
+                    <TextView
+                        android:id="@+id/cartBadgeTextView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:                     />
+                </com.google.android.material.card.MaterialCardView>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </androidx.coordinatorlayout.widget.AppBarLayout>
+
+        <!-- Content Area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Search Bar -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:queryHint="Search food items..."
+                        app:iconifiedByDefault="true"
+                        android:background="@android:color/transparent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/searchButton"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:inset="0dp"
+                        app:icon="@drawable/ic_search"
+                        app:iconTint="@color/colorAccent" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Category Filters -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android: android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android: layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/allChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:text="All"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:checkable="true"
+                        android:setChecked="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/burgersChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        text="Burgers"
+                        style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@chip/pizzaChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        text="Pizza"
+                        style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@chip/pastaChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        text="Pasta"
+                        style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                    <com.google.android.chip.Chip
+                        android:id="@chip/sandwichChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        text="Sandwiches"
+                        style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@chip/beveragesChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        text="Beverages"
+                        style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                    <com.google.android.chip.Chip
+                        android:id="@chip/dessertsChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        text="Desserts"
+                        style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@chip/snacksChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        text="Snacks"
+                        style="@style/Widget.MaterialComponents.Chip.Choice" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!-- Food Items RecyclerView -->
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/foodItemsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="true"
+                    android:clipToPadding="false" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <!-- Empty State -->
+            <LinearLayout
+                android:id="@+id/emptyStateView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@mipmap/ic_empty_cart"
+                    android:contentDescription="No items in cart"
+                    android:alpha="0.6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your cart is empty"
+                    android:textSize="18sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:layout_marginTop="16dp" />
+
+                <Button
+                    android:id="@+id/continueShoppingButton"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue Shopping"
+                    android:textColor="@color/colorAccent"
+                    onClick="onContinueShopping" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Bottom Navigation -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/bottom_nav_menu"
+            app:labelVisibility="selected"
+            app:itemBackground="@color/nav_item_background_color"
+            app:itemIconTint="@color/nav_item_icon_tint"
+            app:itemTextColor="@color/nav_item_text_color" />
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
