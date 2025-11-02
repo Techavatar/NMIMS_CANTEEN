@@ -38,6 +38,7 @@ import com.nmims.canteen.models.User;
 import com.nmims.canteen.services.FirebaseAuthService;
 import com.nmims.canteen.services.FirestoreService;
 import com.nmims.canteen.utils.CartManager;
+import com.nmims.canteen.utils.FirebaseDataInitializer;
 import com.nmims.canteen.utils.FirebaseUtils;
 
 import java.util.ArrayList;
