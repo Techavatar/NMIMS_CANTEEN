@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
+
+    <!-- NoActionBar theme for activities with custom toolbar -->
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- App Bar style -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/textColorOnPrimary</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- Popup theme for toolbar -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/surfaceColor</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="strokeColor">@color/colorAccent</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="FoodCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardBackgroundColor">@color/cardBackgroundColor</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="CartCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardBackgroundColor">@color/cardBackgroundColor</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="Heading1" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Heading2" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Heading3" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="BodyText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="CaptionText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColorSecondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="PriceText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- EditText Styles -->
+    <style name="AppEditText" parent="Widget.MaterialComponents.TextInputEditText">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="AppTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorAccent</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="hintTextColor">@color/textColorHint</item>
+        <item name="android:textColorHint">@color/textColorHint</item>
+        <item name="errorTextColor">@color/errorColor</item>
+    </style>
+
+    <!-- RecyclerView Styles -->
+    <style name="RecyclerViewStyle">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- Bottom Navigation Style -->
+    <style name="BottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_color_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_color_selector</item>
+        <item name="itemRippleColor">@color/rippleEffect</item>
+        <item name="background">@color/surfaceColor</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- FAB Style -->
+    <style name="FabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/colorAccent</item>
+        <item name="tint">@android:color/white</item>
+        <item name="elevation">6dp</item>
+        <item name="rippleColor">@color/rippleEffect</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="titleTextColor">@color/textColorOnPrimary</item>
+        <item name="subtitleTextColor">@color/textColorOnPrimary</item>
+        <item name="android:elevation">4dp</item>
+        <item name="titleTextAppearance">@style/ToolbarTitleText</item>
+        <item name="subtitleTextAppearance">@style/ToolbarSubtitleText</item>
+    </style>
+
+    <style name="ToolbarTitleText" parent="TextAppearance.MaterialComponents.Toolbar.Title">
+        <item name="android:textColor">@color/textColorOnPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="ToolbarSubtitleText" parent="TextAppearance.MaterialComponents.Toolbar.Subtitle">
+        <item name="android:textColor">@color/textColorOnPrimary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Navigation Drawer Style -->
+    <style name="NavigationViewStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemIconTint">@color/nav_item_color_selector</item>
+        <item name="itemTextColor">@color/nav_item_color_selector</item>
+        <item name="itemRippleColor">@color/rippleEffect</item>
+        <item name="android:background">@color/surfaceColor</item>
+    </style>
+
+    <!-- Chip Style -->
+    <style name="CategoryChip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background_color_selector</item>
+        <item name="chipStrokeColor">@color/colorAccent</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/chip_text_color_selector</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Badge Style -->
+    <style name="CartBadge">
+        <item name="android:background">@drawable/cart_badge_background</item>
+        <item name="android:textColor">@color/cartBadgeText</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:minWidth">16dp</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Divider Style -->
+    <style name="DividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/dividerColor</item>
+    </style>
+
+    <!-- Loading Style -->
+    <style name="LoadingStyle" parent="Widget.MaterialComponents.CircularProgressIndicator">
+        <item name="indicatorColor">@color/colorAccent</item>
+        <item name="trackColor">@color/shimmerColor</item>
+    </style>
+
+    <!-- Shimmer Effect for Loading -->
+    <style name="ShimmerStyle">
+        <item name="android:background">@color/shimmerColor</item>
+        <item name="android:alpha">0.3</item>
+    </style>
+
+    <!-- Dialog Styles -->
+    <style name="AppDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:windowBackground">@color/surfaceColor</item>
+    </style>
+
+    <!-- Tab Layout Style -->
+    <style name="TabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabTextColor">@color/textColorSecondary</item>
+        <item name="android:background">@color/surfaceColor</item>
+    </style>
+
+    <!-- Rating Bar Style -->
+    <style name="RatingBarStyle" parent="Widget.MaterialComponents.RatingBar">
+        <item name="tint">@color/ratingFilled</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">0.5</item>
+    </style>
+
+    <!-- Swipe Refresh Layout Style -->
+    <style name="SwipeRefreshLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Card View Style for Statistics -->
+    <style name="StatsCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardBackgroundColor">@color/surfaceColor</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>
