@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
     private CartManager cartManager;
     private FirebaseAuthService authService;
     private FirestoreService firestoreService;
+    private FirebaseDataInitializer dataInitializer;
 
     // Data
     private List<FoodItem> foodItems;
