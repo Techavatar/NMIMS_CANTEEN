@@ -213,8 +213,8 @@ public class FirebaseDataInitializer {
         batch.commit()
             .addOnSuccessListener(aVoid -> {
                 Log.d(TAG, "Categories initialized successfully");
-                // Initialize sample analytics data
-                initializeAnalytics();
+                // Initialize inventory data
+                initializeInventory();
             })
             .addOnFailureListener(e -> {
                 Log.e(TAG, "Error initializing categories", e);
