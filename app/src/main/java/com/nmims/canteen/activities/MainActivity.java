@@ -182,11 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 navigateToProfile();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
-            } else if (itemId == R.id.nav_reviews) {
-                navigateToReviews();
-                drawerLayout.closeDrawer(GravityCompat.START);
-                return true;
-            } else if (itemId == R.id.nav_settings) {
+              } else if (itemId == R.id.nav_settings) {
                 navigateToSettings();
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
