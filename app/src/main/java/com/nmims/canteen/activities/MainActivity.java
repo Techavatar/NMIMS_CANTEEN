@@ -374,10 +374,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, ProfileActivity.class));
     }
 
-    private void navigateToReviews() {
-        startActivity(new Intent(this, ReviewActivity.class));
-    }
-
+  
     private void navigateToSettings() {
         startActivity(new Intent(this, SettingsActivity.class));
     }
