@@ -158,20 +158,6 @@ public class FirebaseDataInitializer {
         foodItem.put("preparationTime", preparationTime);
         foodItem.put("ingredients", Arrays.asList("Main Ingredient", "Spices", "Fresh Produce"));
 
-        // Inventory
-        Map<String, Object> inventory = new HashMap<>();
-        inventory.put("stockQuantity", 30 + (int)(Math.random() * 70)); // Random stock between 30-100
-        inventory.put("lowStockThreshold", 10);
-        inventory.put("batchNumber", "B" + System.currentTimeMillis());
-        inventory.put("expiryDate", new Date(System.currentTimeMillis() + 7 * 24 * 60 * 60 * 1000)); // 7 days from now
-        foodItem.put("inventory", inventory);
-
-        // Sales data
-        Map<String, Object> salesData = new HashMap<>();
-        salesData.put("totalSold", (int)(Math.random() * 500));
-        salesData.put("revenue", price * (int)(Math.random() * 500));
-        foodItem.put("salesData", salesData);
-
         // Timestamps
         foodItem.put("createdAt", new Date());
         foodItem.put("updatedAt", new Date());
