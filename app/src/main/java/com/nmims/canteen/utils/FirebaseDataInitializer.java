@@ -239,46 +239,7 @@ public class FirebaseDataInitializer {
     }
 
   
-    /**
-     * Initialize inventory data for food items
-     */
-    private void initializeInventory() {
-        WriteBatch batch = db.batch();
-
-        List<String> itemIds = Arrays.asList(
-            "aloo_paratha", "bread_pakora", "burger", "cheese_sandwich", "chole_bhature",
-            "chole_kulche", "idli_sambar", "khamand", "masala_dosa", "paneer_paratha",
-            "pav_bhaji", "pizza", "pizza2", "rava_dosa", "red_pasta", "samosa",
-            "vada_pav", "veg_sandwich", "white_pasta"
-        );
-
-        for (String itemId : itemIds) {
-            Map<String, Object> inventory = new HashMap<>();
-            inventory.put("foodItemId", itemId);
-            inventory.put("currentStock", 30 + (int)(Math.random() * 70));
-            inventory.put("lowStockThreshold", 10);
-            inventory.put("maxStock", 100);
-            inventory.put("reorderLevel", 15);
-            inventory.put("batchNumber", "B" + System.currentTimeMillis());
-            inventory.put("expiryDate", new Date(System.currentTimeMillis() + 7 * 24 * 60 * 60 * 1000));
-            inventory.put("lastRestocked", new Date());
-            inventory.put("totalConsumed", (int)(Math.random() * 50));
-            inventory.put("wastage", (int)(Math.random() * 5));
-            inventory.put("updatedAt", new Date());
-
-            batch.set(db.collection("inventory").document(itemId), inventory);
-        }
-
-        batch.commit()
-            .addOnSuccessListener(aVoid -> {
-                Log.d(TAG, "Inventory initialized successfully");
-                Log.d(TAG, "Database initialization completed successfully!");
-            })
-            .addOnFailureListener(e -> {
-                Log.e(TAG, "Error initializing inventory", e);
-            });
-    }
-
+    
     /**
      * Check if data is already initialized
      */
