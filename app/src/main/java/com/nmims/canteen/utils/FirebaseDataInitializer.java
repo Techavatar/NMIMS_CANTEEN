@@ -239,37 +239,7 @@ public class FirebaseDataInitializer {
         return category;
     }
 
-    /**
-     * Initialize sample analytics data
-     */
-    private void initializeAnalytics() {
-        Map<String, Object> analytics = new HashMap<>();
-
-        // Today's metrics
-        Map<String, Object> metrics = new HashMap<>();
-        metrics.put("totalOrders", 50 + (int)(Math.random() * 100));
-        metrics.put("totalRevenue", 5000.00 + (Math.random() * 10000));
-        metrics.put("averageOrderValue", 100.00 + (Math.random() * 50));
-        metrics.put("uniqueCustomers", 30 + (int)(Math.random() * 70));
-        metrics.put("repeatCustomers", 10 + (int)(Math.random() * 40));
-        analytics.put("metrics", metrics);
-
-        analytics.put("date", new Date());
-        analytics.put("createdAt", new Date());
-
-        db.collection("analytics")
-            .document(FirebaseUtils.formatDate(new Date()))
-            .set(analytics)
-            .addOnSuccessListener(aVoid -> {
-                Log.d(TAG, "Analytics initialized successfully");
-                // Initialize inventory data
-                initializeInventory();
-            })
-            .addOnFailureListener(e -> {
-                Log.e(TAG, "Error initializing analytics", e);
-            });
-    }
-
+  
     /**
      * Initialize inventory data for food items
      */
